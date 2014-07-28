@@ -4,9 +4,11 @@ set incsearch
 set autoindent
 set number
 set go=
+set shiftwidth=4
+
 
 filetype plugin indent on
-"colorscheme evening 
+colorscheme evening 
 
 autocmd FileType cpp set makeprg=g++\ %
 autocmd FileType c set makeprg=gcc\ %
@@ -21,6 +23,7 @@ autocmd FileType cpp,c,haskell,tex,java,sh,mp  map <buffer> <leader><space> :w<c
 autocmd FileType cpp,c,haskell  map <buffer> <leader>r :!./a.out<cr>
 autocmd FileType sh map <buffer> <leader>r :!./%<cr>
 autocmd FileType java map <buffer> <leader>r :!java %<<cr>
+autocmd FileType python map <buffer> <leader>r :w<cr>:!python %<cr>
 
 nmap <leader>cn :cn<cr>
 nmap <leader>cp :cp<cr>
