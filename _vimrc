@@ -13,7 +13,7 @@ syntax on
 filetype plugin indent on
 colorscheme desert
 
-autocmd FileType cpp set makeprg=g++\ %
+autocmd FileType cpp set makeprg=g++\ -std=c++11\ %
 autocmd FileType c set makeprg=gcc\ %
 autocmd FileType haskell set makeprg=ghc\ -o\ a.exe\ --make\ %
 autocmd FileType sh set makeprg=chmod\ 777\ %
